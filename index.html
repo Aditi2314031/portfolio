@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aditi Tripathi - Computer Science Undergraduate specializing in AI/ML & Web Development. View projects, skills, education, and achievements.">
+    <meta name="keywords" content="Aditi Tripathi, Portfolio, Web Developer, AI Engineer, Machine Learning, Deep Learning, React, Python, PSIT Kanpur">
+    <meta name="author" content="Aditi Tripathi">
+    <title>Aditi Tripathi | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme" data-persona="ai-ml">
+    <!-- Glowing background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Aditi<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Switcher -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-nav-btn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="mobile-nav" id="mobile-nav-menu">
+        <button class="mobile-nav-close" id="mobile-nav-close-btn" aria-label="Close navigation menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#achievements" class="mobile-nav-link">Achievements</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <!-- Profile Persona Switcher (CRITICAL FEATURE) -->
+                <div class="persona-switcher-container">
+                    <span class="switcher-label">Select Focus Profile:</span>
+                    <div class="persona-switcher">
+                        <button class="switcher-btn active" id="btn-ai" data-target-persona="ai-ml">
+                            <i class="fa-solid fa-brain"></i> AI / ML Engineer
+                        </button>
+                        <button class="switcher-btn" id="btn-web" data-target-persona="web-dev">
+                            <i class="fa-solid fa-code"></i> Frontend Developer
+                        </button>
+                        <div class="switcher-slider"></div>
+                    </div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-text-area">
+                        <h4 class="hero-subtitle">Hello, I'm</h4>
+                        <h1 class="hero-title">Aditi Tripathi</h1>
+                        <h2 class="hero-typing-wrap">
+                            Specializing in <span class="typing-text">AI / ML Engineering</span><span class="typed-cursor">|</span>
+                        </h2>
+                        
+                        <!-- Dynamic Objective Texts dependent on mode -->
+                        <p class="hero-description text-ai">
+                            B.Tech Computer Science and Engineering (Artificial Intelligence) undergraduate with expertise in Machine Learning, Deep Learning, and Data Structures & Algorithms. Passionate about designing intelligent systems, building scalable ML models, and leveraging data to solve real-world problems.
+                        </p>
+                        <p class="hero-description text-web d-none">
+                            Computer Science undergraduate pursuing B.Tech in Computer Science and Engineering (Artificial Intelligence). Passionate about building responsive, user-friendly, and high-performance web applications with clean and maintainable code.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="Aditi_Tripathi_ML_Resume.pdf" class="btn btn-secondary" id="resume-download-btn" download><i class="fa-solid fa-download"></i> Download Resume</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+
+                    <!-- Square Photo Column just to the right of name -->
+                    <div class="hero-graphics">
+                        <div class="hero-square-photo-card glass-card">
+                            <img src="profile.jpg" alt="Aditi Tripathi" class="hero-square-img">
+                            <div class="square-photo-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <a href="#about" aria-label="Scroll down">
+                        <span class="mouse">
+                            <span class="wheel"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-heading">Who is Aditi?</h3>
+                        <p class="about-desc text-ai">
+                            I am a final-year Computer Science and Engineering student at PSIT Kanpur, specializing in Artificial Intelligence. My academic journey has centered around translating complex mathematical theories into concrete deep learning models and intelligent data systems. I enjoy analyzing datasets, designing neural architectures, and deploying models to optimize network traffic or medical image processing.
+                        </p>
+                        <p class="about-desc text-web d-none">
+                            I am a B.Tech Computer Science and Engineering undergraduate who loves bringing interface designs to life. I combine solid web basics (HTML5, CSS3, JavaScript) with React to build fast, responsive, and delightful web applications. My background in Artificial Intelligence helps me bridge the gap between intelligent backends (like Google Gemini API) and rich user experiences.
+                        </p>
+                        
+                        <div class="soft-skills">
+                            <h4 class="skills-subtitle">My Attributes</h4>
+                            <div class="skills-chips">
+                                <span class="chip"><i class="fa-solid fa-lightbulb"></i> Problem-Solving</span>
+                                <span class="chip"><i class="fa-solid fa-users"></i> Team Collaboration</span>
+                                <span class="chip"><i class="fa-solid fa-comments"></i> Communication</span>
+                                <span class="chip"><i class="fa-solid fa-arrows-spin"></i> Adaptability</span>
+                                <span class="chip"><i class="fa-solid fa-clock"></i> Time Management</span>
+                                <span class="chip"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-education">
+                        <h3 class="about-heading">Education Journey</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <span class="timeline-date">Oct 2023 - June 2027</span>
+                                    <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                                    <h5 class="timeline-subtitle">Pranveer Singh Institute of Technology (PSIT)</h5>
+                                    <p class="timeline-detail">Specialization: Artificial Intelligence | Kanpur, India</p>
+                                    <span class="badge badge-accent">CGPA / Percentage: 81% (Till 6th Semester)</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <span class="timeline-date">Apr 2021 - Mar 2022</span>
+                                    <h4 class="timeline-title">Senior Secondary (Class XII) - CBSE</h4>
+                                    <h5 class="timeline-subtitle">Deoria Senior Secondary School</h5>
+                                    <p class="timeline-detail">Deoria, Uttar Pradesh, India</p>
+                                    <span class="badge">Percentage: 92.4%</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content glass-card">
+                                    <span class="timeline-date">Apr 2019 - Mar 2020</span>
+                                    <h4 class="timeline-title">Secondary (Class X) - CBSE</h4>
+                                    <h5 class="timeline-subtitle">Central Academy</h5>
+                                    <p class="timeline-detail">Deoria, Uttar Pradesh, India</p>
+                                    <span class="badge">Percentage: 91.6%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Languages -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-solid fa-code"></i>
+                                <span>C / C++</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="web">
+                                <i class="fa-brands fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="web">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5 / CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cubes"></i>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-chip" data-relevance="web">
+                                <i class="fa-brands fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-gears"></i>
+                                <span>Keras & TF</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>scikit-learn</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Pandas & MPL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Concepts & CS Fundamentals -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Core Concepts</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>DSA</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-solid fa-database"></i>
+                                <span>SQL / DBMS</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-language"></i>
+                                <span>NLP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="ai">
+                                <i class="fa-solid fa-book-open"></i>
+                                <span>Jupyter/Colab</span>
+                            </div>
+                            <div class="skill-chip" data-relevance="both">
+                                <i class="fa-solid fa-server"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Projects Filter -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Fridge-to-Recipe (Web) -->
+                    <div class="project-card glass-card" data-category="web-dev">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+                            <span class="project-date">Jun 2026</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Fridge-to-Recipe</h3>
+                            <h4 class="project-subtitle">AI-Powered Recipe Generator</h4>
+                            <p class="project-desc">
+                                Developed an AI-powered recipe recommendation web application that generates personalized recipes from user-provided ingredients, integrating real-time cooking intelligence.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Integrated Google Gemini API to generate custom recipes, step-by-step instructions, and scale ingredient ratios.</li>
+                                <li>Implemented cooking progress tracking, serving-size scaling, and browser localStorage for secure API keys and session state.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Vite</span>
+                                <span>Vanilla CSS</span>
+                                <span>Gemini API</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Aditi2314031/Fridge-to-Recipe" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: CompNet (AI/ML) -->
+                    <div class="project-card glass-card" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                            <span class="project-date">Jan 2026</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">CompNet</h3>
+                            <h4 class="project-subtitle">Intelligent Network Congestion Control</h4>
+                            <p class="project-desc">
+                                Built an data-driven network congestion control system using ML/DL models to predict congestion and optimize packet flows in real time.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Achieved 95% congestion prediction accuracy by analyzing network metrics like throughput, delay, and packet loss.</li>
+                                <li>Prototyped and tested neural model pipelines within simulated environments using Mininet and ns-3 simulators.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Machine Learning</span>
+                                <span>Deep Learning</span>
+                                <span>Mininet</span>
+                                <span>ns-3</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/IG-ABHINAV/Comp-net" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Brain Tumor (AI/ML) -->
+                    <div class="project-card glass-card" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+                            <span class="project-date">Apr 2026</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Brain Tumor Detection</h3>
+                            <h4 class="project-subtitle">CNN-Based Segmentation & Classification</h4>
+                            <p class="project-desc">
+                                Designed a deep learning pipeline to automatically detect and segment brain tumors from raw medical MRI images.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Implemented a ResNet50 model to classify images, achieving an evaluation accuracy of 96%.</li>
+                                <li>Constructed a ResUNet architecture to predict spatial pixel masks, localizing tumor margins with Focal Tversky Loss.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Deep Learning</span>
+                                <span>ResNet50</span>
+                                <span>ResUNet</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Aditi2314031/Brain-Tumor-Detection" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: BookTown (Web) -->
+                    <div class="project-card glass-card" data-category="web-dev">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-book"></i></div>
+                            <span class="project-date">Jan 2026</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">BookTown</h3>
+                            <h4 class="project-subtitle">Online Book Purchase E-Commerce</h4>
+                            <p class="project-desc">
+                                Programmed a fully functional digital bookstore showcasing clean frontend views, cart mechanisms, and responsive user flows.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Developed e-commerce components: authentication, cart system, books catalog search, and custom payment UI.</li>
+                                <li>Managed local storage data structures to synchronize shopping sessions and order placements.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>localStorage</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Aditi2314031/book-town.git" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Cropify (AI/ML) -->
+                    <div class="project-card glass-card" data-category="ai-ml">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <span class="project-date">Jun 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Cropify</h3>
+                            <h4 class="project-subtitle">Crop Yield Prediction System</h4>
+                            <p class="project-desc">
+                                Created a predictive system mapping soil properties and weather parameters to project optimal agricultural yields.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Explored statistical models, achieving 92% R² score using Random Forest Regression over baseline linear regression.</li>
+                                <li>Performed preprocessing, outliers removal, and feature engineering to isolate key environmental drivers.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>scikit-learn</span>
+                                <span>Random Forest</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Aditi2314031/Crop-Yield-Prediction" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Expense Tracker (Web) -->
+                    <div class="project-card glass-card" data-category="web-dev">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
+                            <span class="project-date">Jun 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <h4 class="project-subtitle">Finance Management Web App</h4>
+                            <p class="project-desc">
+                                Developed a highly responsive dashboard assisting users in managing personal transactions with instant summaries and toast notifications.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Built modular layouts enabling category filtering, transaction listings, and real-time balance arithmetic.</li>
+                                <li>Configured persistent layout configuration, saving user light/dark preference in browser cookies.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Local Storage</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Aditi2314031/Expense-tracker.git" class="project-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements & Credentials</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Stats Counters Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="stat-num" data-val="750">0</div>
+                        <div class="stat-label">LeetCode Problems Solved</div>
+                        <p class="stat-desc">Strong command over Data Structures & Algorithms in C++</p>
+                        <a href="https://leetcode.com/u/Aditi_tripathi30" class="stat-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+                    </div>
+                    
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="stat-num" data-val="1500">0</div>
+                        <div class="stat-label">LeetCode Rating</div>
+                        <p class="stat-desc">Top tier rank in competitive algorithms contests</p>
+                    </div>
+
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                        <div class="stat-num" data-val="5">0</div>
+                        <div class="stat-label">HackerRank Gold Stars</div>
+                        <p class="stat-desc">Earned 5-star badges in Problem Solving, C++, and Python</p>
+                        <a href="https://www.hackerrank.com/profile/aditi_tripathii" class="stat-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Profile</a>
+                    </div>
+                </div>
+
+                <!-- Certifications Area -->
+                <div class="certifications-container">
+                    <h3 class="certifications-heading">Verified Certifications</h3>
+                    <div class="certs-grid">
+                        <!-- Cert 1 (AI Mode Focus) -->
+                        <div class="cert-card glass-card" data-relevance="ai">
+                            <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">Machine Learning A-Z: AI, Python</h4>
+                                <p class="cert-issuer">Udemy &middot; Dec 2025</p>
+                            </div>
+                            <a href="https://ude.my/UC-995f4ffb-7b4b-42d9-b537-877688de54df" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+
+                        <!-- Cert 2 (AI Mode Focus) -->
+                        <div class="cert-card glass-card" data-relevance="ai">
+                            <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">GenAI Powered Data Analytics Job Simulation</h4>
+                                <p class="cert-issuer">Tata & Forage &middot; July 2026</p>
+                            </div>
+                            <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_2krAPCCytFQyKqdbD_1783868590215_completion_certificate.pdf" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                        
+                        <!-- Cert 3 (AI Mode Focus) -->
+                        <div class="cert-card glass-card" data-relevance="ai">
+                            <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">Deep Learning Certificate</h4>
+                                <p class="cert-issuer">Infosys Springboard</p>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1yyFIG9viwYZFhOawgr41BHlKZnp4fr_Z/view?usp=sharing" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+
+                        <!-- Cert 4 (Both Focus) -->
+                        <div class="cert-card glass-card" data-relevance="both">
+                            <div class="cert-icon"><i class="fa-solid fa-building-columns"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">Oracle Certified Foundation Associate</h4>
+                                <p class="cert-issuer">Oracle &middot; Oct 2025</p>
+                            </div>
+                            <a href="https://files.catbox.moe/jdsf86.pdf" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+
+                        <!-- Cert 5 (Web Mode Focus) -->
+                        <div class="cert-card glass-card" data-relevance="web">
+                            <div class="cert-icon"><i class="fa-brands fa-html5"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">HTML5 - The Language</h4>
+                                <p class="cert-issuer">Infosys Springboard &middot; Jan 2025</p>
+                            </div>
+                            <a href="https://ude.my/UC-995f4ffb-7b4b-42d9-b537-877688de54df" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+
+                        <!-- Cert 6 (Web Mode Focus) -->
+                        <div class="cert-card glass-card" data-relevance="web">
+                            <div class="cert-icon"><i class="fa-brands fa-js"></i></div>
+                            <div class="cert-info">
+                                <h4 class="cert-title">JavaScript Certificate</h4>
+                                <p class="cert-issuer">HackerRank</p>
+                            </div>
+                            <a href="https://www.hackerrank.com/certificates/iframe/986badeeac71" class="cert-verify-btn" target="_blank"><i class="fa-solid fa-shield-halved"></i> Verify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4>Email Me</h4>
+                                <a href="mailto:2k23.csai2314031@gmail.com">2k23.csai2314031@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <h4>Call Me</h4>
+                                <a href="tel:+918299086304">+91 8299086304</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="info-text">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/aditi-tripath" target="_blank">linkedin.com/in/aditi-tripath</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="info-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/aditi2314031" target="_blank">github.com/aditi2314031</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Hiring Opportunity / Collaboration">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div class="form-response-msg" id="form-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Aditi Tripathi. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/aditi2314031" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/aditi-tripath" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/u/Aditi_tripathi30" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                <a href="mailto:2k23.csai2314031@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="#" class="back-to-top" id="scroll-top-btn" aria-label="Back to top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
